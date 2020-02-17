@@ -1,1 +1,2 @@
 
+The code I contributed looks at a detrended lightcurve of an area in the sky. It shows periodical change. To investigate further I created an animation out of TESS pictures. It shows the changing flux of the star indicating an exoplanet or smth similar. To further look into the change of the star's flux it has been isolated and plotted again. The regular change in flux and the two differently sized bumbs every period indicate a binary star system.
