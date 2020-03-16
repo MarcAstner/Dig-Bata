@@ -23,4 +23,10 @@ Including these options the model showed a better validation accuracy of (75%). 
 Initally I even underfitted the training because I implemented to many restricting factors/layers like multiple dropout function.
 The amount of parameters was also important, best results were generated with roughly 3-4 million parameters, resulting in longer computation time.
 
-note: the code in my github for the cilfar cnn was corrupted so i needed to rerun it last minute. Due to a lack of time I needed to stop the code and use the old confusion matrix. 
+edit: I tried using multiple different activation functions together, though this has proven futile. The best results were gathered by sticking with one activation function. Even adding similar add on functions like Leaky Relu and Prelu that should help with backwards computability of the parameters were not that promising, though I had only limited time testing them and there is a good chance that they are benefical in larger, more complicated models.
+
+
+
+
+note: the code in my github for the cilfar cnn was corrupted so i needed to rerun it last minute. Due to a lack of time I needed to stop the code and use the old confusion matrix. The underfit file was the only file i had computed.
+edit: It is finshed running with the correct code, the parameters were changed so the amount of parameters was less aswell as the computation time. I am sorry that I uploaded the correct file ML_cilfar_CNN_bestfit.ipynb 30 minutes late but i just moved back home today due to boarder closing. 
