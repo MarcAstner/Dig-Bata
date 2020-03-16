@@ -7,11 +7,11 @@ The neureal network consists of two dense layers using the same activation of re
 The output was given in the third dense layer, sized two the amount of possible actions. The inital parameters for training were changed.
 
 parameters:
-MAXRUNS = 50
-GAMMA = 0.975 - needs to be high enough to be significant
-LEARNING_RATE = 0.00125 - too high=fast learning in the beginning and very slow later on, vice versa
-MEMORY_SIZE = 100000 - important in combination with batch size and learning rate
-BATCH_SIZE = 32 - if too big=slower computations
+MAXRUNS = 50;
+GAMMA = 0.975 - needs to be high enough to be significant;
+LEARNING_RATE = 0.00125 - too high=fast learning in the beginning and very slow later on, vice versa;
+MEMORY_SIZE = 100000 - important in combination with batch size and learning rate;    
+BATCH_SIZE = 32 - if too big=slower computations;
 
 optimizer adam proved to be very compatible with linear activations such as relu in this exercise
 
@@ -23,7 +23,7 @@ Including these options the model showed a better validation accuracy of (75%). 
 Initally I even underfitted the training because I implemented to many restricting factors/layers like multiple dropout function.
 The amount of parameters was also important, best results were generated with roughly 3-4 million parameters, resulting in longer computation time.
 
-edit: I tried using multiple different activation functions together, though this has proven futile. The best results were gathered by sticking with one activation function. Even adding similar add on functions like Leaky Relu and Prelu that should help with backwards computability of the parameters were not that promising, though I had only limited time testing them and there is a good chance that they are benefical in larger, more complicated models.
+edit: I tried using various amounts of multiple different activation functions together, though this has proven futile. The best results were gathered by sticking with one activation function and only one iteration. Even adding similar add on functions like Leaky Relu and Prelu that should help with backwards computability of the parameters were not that promising, though I had only limited time testing them and there is a good chance that they are benefical in larger, more complicated models.
 
 
 
