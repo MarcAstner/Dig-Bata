@@ -20,8 +20,8 @@ cilfar cnn:
 This neural network consists of convolutional and pooling layers. These are mandatory for an image processing NN. Simple models showed high accuracy(85%+) during training and very low accuracy(65%)during testing.
 This is a clear sign for overfitting. In order to counteract this I tried implementing Batch_Normaliztion layers as well as kernel_regularizers to regulate the weight they place on the neurons.
 Including these options the model showed a better validation accuracy of (75%). Though it took way more epochs.
-Initally I even underfitted the training because I implemented to many restricting factors/layers like multiple dropout function.
-The amount of parameters was also important, best results were generated with roughly 3-4 million parameters, resulting in longer computation time.
+Initally I even underfitted the training because I implemented to many restricting factors/layers like multiple dropout functions.
+The amount of parameters and the batch size was also important, first results were generated with roughly 3-4 million parameters, resulting in longer computation time.
 
 edit: I tried using various amounts of multiple different activation functions together, though this has proven futile. The best results were gathered by sticking with one activation function and only one iteration. Even adding similar add on functions like Leaky Relu and Prelu that should help with backwards computability of the parameters were not that promising, though I had only limited time testing them and there is a good chance that they are benefical in larger, more complicated models.
 
